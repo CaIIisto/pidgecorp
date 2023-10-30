@@ -1,6 +1,7 @@
 body{margin:0;
 color: #de9d4a;
 font-family: Copperplate, "Copperplate Gothic Light", fantasy;}
+
 .container {
    
     max-width:95%;
@@ -15,6 +16,7 @@ font-family: Copperplate, "Copperplate Gothic Light", fantasy;}
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: baseline;
+    flex: 1 1;
 }
 .navbar{
     max-width: 550px;
@@ -35,39 +37,128 @@ font-family: Copperplate, "Copperplate Gothic Light", fantasy;}
     display: inline-block;
     padding: .5em 0.3em;
     color:#de9d4a;
-    text-decoration: none;
+    text-decoration: none;    
 }
+.navbar a:hover{
+    text-decoration: underline;
+    color:#de9e4ac3;
+}
+
 .about-desc{
     display:flex;
-    align-items: start;
+    flex-flow: nowrap row;
+    justify-items: center;
     background-color: #ffe6c5;
     width:70%;
-    padding: 15%;
-    justify-content:space-between;
-    display:flex;
+    padding-left: 15%;
+    padding-right:15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     flex:1 1 40%;
+    align-content: space-between;
+}
+
+.minidiv{
+    max-width: 50%;
+    display:flex;
+    flex-flow: wrap column;
+    justify-content: space-around;
     
 }
-.word-desc{
+ .minidiv button{
+display: flex;
+align-items: center;
+justify-items: center;
+max-width:40%;
+height:15%;
+border:none;
+margin-left: 20%;
+background-color: #5a757b;
+padding:10%;
+padding-top: 5%;
+padding-bottom: 5%;
+ }
+
+.minidiv button a{
+    display: flex;
+    text-decoration: none;
+    flex: 1 1;
+    color:#de9d4a;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    width:90%;
+    height:auto;
+    
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    
+}
+.minidiv button a:hover{
+    text-decoration:underline;
+}
+.minidiv button:hover{
+    background-color: #496065;
+}
+.minidiv word-desc{
     font-size: large;
     flex-wrap: wrap;
-    width: 40%;
+    max-width: 40%;
     margin-right: 5%;
-    flex:1 1 40%;
+
 }
 .word-desc h1{
-
+    max-width:35%;
     flex-wrap: wrap;
     line-height: 1;
     margin-block-start: 0;
 }
-    
+.img-desc{
+    display:flex;
+    width: 50%;
+    height: 80%;
+    justify-content:center;
+    align-content: center;
+    padding-left:10%;
+    max-height: 400px;
+}    
 .img-desc img{
-    flex-wrap: wrap;
+    display:block;
+    order:1;
+    border-radius: 3%;
     width:100%;
     height:auto;
-    max-height: 400px;
     margin-left: 5%;
-    border-radius: 4%;
 }
+.block2{
+    background-color: #53403c;
+    padding: 3%;
+}
+.block2 h2{
+   
+    text-align: center;
+
+}
+.referral{
+    background-color: #53403c;
+    padding-left: 7%;
+    padding-right:7%;
+    padding-bottom:5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.subtext{
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    align-items:center;
     
+}
+.referral .subtext img{
+    max-width:100%;
+    height:auto;
+    aspect-ratio: 1;
+    border-radius: 5%;
+    margin:2%;
+}
+
